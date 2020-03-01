@@ -8,7 +8,8 @@ public class Audi implements Car {
   private int cylindersNum;
   private BodyType bodyType;
 
-  public Audi(final String modelName, final EngineType type, final double engineVolume, final int cylindersNum, final BodyType bodyType) {
+  public Audi(final String modelName, final EngineType type, final double engineVolume, final int cylindersNum,
+              final BodyType bodyType) {
     this.modelName = modelName;
     this.type = type;
     this.engineVolume = engineVolume;
