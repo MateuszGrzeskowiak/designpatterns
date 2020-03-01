@@ -5,14 +5,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class MVAMapperImpl implements MVAMapper {
-    @Override
-    public MultiValueAttribute rtoToObject(MultiValueAttributeDto dto) {
+    public MultiValueAttribute dtoToObject(MultiValueAttributeDto dto) {
         final MultiValueAttribute mva = new MultiValueAttribute();
         mva.setId(dto.getId());
         mva.setName(dto.getName());
         mva.setValues(Arrays.asList(dto.getCsvValues().split(",")));
         return mva;
     }
+
 
     @Override
     public MultiValueAttributeDto objectToDto(MultiValueAttribute mva) {
